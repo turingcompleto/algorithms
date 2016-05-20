@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="fausto">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="css/material.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Algoritmos</title>
+</head>
+
+<body>
+
+    <header>
+        <!-- Always shows a header, even in smaller screens. -->
+        <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+            <header class="mdl-layout__header">
+                <div class="mdl-layout__header-row">
+                    <!-- Title -->
+                    <a href="#/" class="nonstyle">
+                    <span class="mdl-layout-title">Algoritmos</span>
+                    </a>
+                    <!-- Add spacer, to align navigation to the right -->
+                    <div class="mdl-layout-spacer"></div>
+                    <!-- Navigation. We hide it in small screens. -->
+            
+                </div>
+            </header>
+            <div class="mdl-layout__drawer">
+                <span class="mdl-layout-title">Algoritmos </span>
+                <nav class="mdl-navigation">
+                   <a class="mdl-navigation__link" href="#/">Inicio</a>
+                    <a class="mdl-navigation__link" href="#kruskal">Kruskal</a>
+                    <a class="mdl-navigation__link" href="#fd">Ford-Fulkerson</a>
+                    <a class="mdl-navigation__link" href="#dij">Dijkstra</a>
+                </nav>
+            </div>
+            <main class="mdl-layout__content">
+                <div class="page-content" ng-view>
+
+
+                </div>
+                <!--  <footer class="container-fluid backf">
+      <div class="container">
+       <p>
+       <br>
+        Club de Investigación y Desarrollo Web Acatlán, Copyright 2016 escrito por <a href="">Fausto César Reyes</a>. 
+        </p>
+        </div>
+    </footer> -->
+            </main>
+        </div>
+    </header>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="js/material.min.js"></script>
+    <script src="angular-1.5.5/angular.min.js"></script>
+    <script src="angular-1.5.5/angular-route.min.js"></script>
+    <script src="angular-1.5.5/angular-route.min.js"></script>
+    <script src="angular-1.5.5/angular-animate.min.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>

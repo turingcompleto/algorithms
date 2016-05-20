@@ -1,0 +1,101 @@
+body{
+    background: #e2e2e2;
+    color: dimgray;
+}
+
+.backimg{
+    background: url(../img/parallax1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.margen{
+    margin-top: 30px;
+}
+.margen2{
+    margin-top: 100px;
+}
+.backf{
+    background: #2c2c2c;
+    text-align: center;
+}
+
+.color{
+color: #cc4141;
+}
+
+small{
+    color: aliceblue;
+}
+.nonstyle{
+    text-decoration: none;
+    color: white;
+}
+
+.nonstyle:hover{
+    text-decoration: none;
+    color: white;
+}
+
+@keyframes animation{
+    0% {transform: rotateX(360deg);}
+    
+}
+
+.welly{
+    animation-name: animation;
+    animation-duration: 2s;
+    box-shadow: 11px 10px 10px rgba(0, 0, 0, 0.18);
+}
+
+@keyframes animaavatar{
+    0% {transform: rotateY(360deg);}
+    
+}
+
+.imagen{
+    animation-name: animaavatar;
+    animation-delay: 6s;
+    animation-duration: 5s;
+    animation-iteration-count: 3;
+}
+
+@keyframes head{
+    0% {opacity: .0;}
+    
+}
+
+.anima{
+    animation-name: head;
+    animation-duration: 2s;
+    
+}
+
+
+
+@keyframes giron{
+    0% {transform: rotateY(160deg);}
+    
+}
+
+.thumbnail:hover{
+    animation-name: giron;
+    animation-duration: 1s;
+    transition-delay: 3s;
+    transition-duration: 1s;
+}
+
+@keyframes slideInRight {
+    from    { transform:translateX(100%); }
+    to      { transform: translateX(0); }
+}
+
+.ng-leave { 
+    animation: slideInRight 0.5s both ease-in; z-index: 8888; 
+}
+
+#pantalla{
+
+}
