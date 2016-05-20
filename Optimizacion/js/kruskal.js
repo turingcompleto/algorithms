@@ -14,6 +14,7 @@ function Kruskal(canvas,canvas2,myfont,isdigraph,nodes,edges) {
 		var context = canvas.getContext("2d");
 		context.font = myfont;
 		Graph(context,isdigraph,nodes,edges);
+        context.fillStyle = "red";
 	}
 	// extension for Kruskal's Algorithm	'
 	/* the following properties will be initialized at init_data()
@@ -39,7 +40,7 @@ function Kruskal(canvas,canvas2,myfont,isdigraph,nodes,edges) {
 	// extends Node Methods
 	Node.prototype.paint = function(context,node) {	// override Node.paint
 		context.strokeStyle='balck';
-		context.fillStyle='white';
+		context.fillStyle="rgb(128, 252, 74)";
 		node.drawNode(context,node);
 	}
 	Node.prototype.paint2 = function(context,node,x,y,rl) {
@@ -47,7 +48,7 @@ function Kruskal(canvas,canvas2,myfont,isdigraph,nodes,edges) {
 		var h = node.wh.h;
 		x += rl*w;
 		y -= h/2;
-		context.fillStyle = 'white';
+		context.fillStyle = "rgb(128, 252, 74)";
 		context.lineWidth=1;
 
 		context.beginPath();
@@ -226,7 +227,7 @@ function Kruskal(canvas,canvas2,myfont,isdigraph,nodes,edges) {
 		var h = canvas.height;
 
 		context.clearRect(0,0,w,h);
-		context.fillStyle = 'white';
+		context.fillStyle = 'rgb(226, 226, 226)';
 		context.fillRect(0,0,w,h);
 		context.strokeStyle = 'black';
 		context.fillStyle = 'black';
@@ -245,7 +246,7 @@ function Kruskal(canvas,canvas2,myfont,isdigraph,nodes,edges) {
 		var w = canvas.width;
 		var h = canvas.height;
 
-		context.fillStyle = 'white';
+		context.fillStyle = 'rgb(226, 226, 226)';
 		context.fillRect(0,0,w,h);
 		context.strokeStyle = 'black';
 		context.fillStyle = 'black';

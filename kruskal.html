@@ -9,20 +9,61 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="css/material.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <title>Cidwa | Fausto César</title>
+    <title>Optimización entera y dinamica</title>
 </head>
 
 <body>
-    <section class="container margen">
-        <div class="row">
-        
-        <h1>Optimizacion</h1>
-        <section class="row">
-          <canvas id="kruskal" width="300" height="250"></canvas><br>
-          <canvas id="kruskalsub" width="320" height="250"></canvas><br>
-            </section>
+    <header>
+        <!-- Always shows a header, even in smaller screens. -->
+        <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+            <header class="mdl-layout__header">
+                <div class="mdl-layout__header-row">
+                    <!-- Title -->
+                    <a href="#/" class="nonstyle">
+                        <span class="mdl-layout-title">Optimización Entera y Dinamica</span>
+                    </a>
+                    <!-- Add spacer, to align navigation to the right -->
+                    <div class="mdl-layout-spacer"></div>
+                    <!-- Navigation. We hide it in small screens. -->
+
+                </div>
+            </header>
+            <div class="mdl-layout__drawer">
+                <span class="mdl-layout-title">Algoritmos </span>
+                <nav class="mdl-navigation">
+                    <a class="mdl-navigation__link" href="index.html">Inicio</a>
+                    <a class="mdl-navigation__link" href="kruskal.html">Kruskal</a>
+                    <a class="mdl-navigation__link" href="fd.html">Ford-Fulkerson</a>
+                    <a class="mdl-navigation__link" href="dij.html">Dijkstra</a>
+                </nav>
+            </div>
+            <main class="mdl-layout__content">
+                <div class="page-content">
+                    <section class="container margen">
+                        <div class="row">
+
+                            <h1>Algoritmo de Kruskal</h1>
+                            <section class="row">
+                                <center>
+                                    <canvas id="kruskal" width="400" height="350"></canvas>
+                                    <canvas id="kruskalsub" width="400" height="350"></canvas>
+                                    <br>
+                                </center>
+                            </section>
+                        </div>
+                    </section>
+                </div>
+               <footer class="container-fluid backf">
+      <div class="container">
+       <p>
+       <br>
+        <i class="material-icons">cloud_queue</i> Club de Investigación y Desarrollo Web Acatlán, Copyright 2016 escrito por <a href="">Bryan Kenneth Sánchez</a> y <a href="">Fausto César Reyes</a>. 
+        </p>
         </div>
-    </section>
+    </footer> 
+            </main>
+        </div>
+    </header>
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
@@ -30,9 +71,9 @@
     <script src="js/material.min.js"></script>
     <script src="angular-1.5.5/angular.min.js"></script>
     <script src="angular-1.5.5/angular-route.min.js"></script>
-    
-    
-    
+
+
+
     <script src="Optimizacion/js/jcanvas.min.js"></script>
     <!-- dijsktra-->
 
@@ -46,33 +87,42 @@
     <script src="Optimizacion/js/graph.js"></script>
     <script src="Optimizacion/js/qsort.js"></script>
     <script>
-  var myfont = "18px 'Courier'";
-  var isdigraph = false;
-  var nodes = [["v0",150,50],
-    ["v1",50,100],
-    ["v2",100,200],
-    ["v3",200,200],
-    ["v4",250,100]];
-  var edges =[["","v0","v1",4],
-    ["","v0","v2",4],
-    ["","v0","v3",3],
-    ["","v0","v4",6],
-    ["","v1","v2",3],
-    ["","v1","v4",7],
-    ["","v2","v3",2],
-    ["","v3","v4",5]];
+        var myfont = "18px 'Courier'";
+        var isdigraph = false;
+        var nodes = [["v0", 150, 50],
+        ["v1", 50, 100],
+        ["v2", 100, 200],
+        ["v3", 200, 200],
+        ["v4", 250, 100],
+        ["v5", 300, 200]];
+        var edges = [["", "v0", "v1", 4],
+        ["", "v0", "v2", 4],
+        ["", "v0", "v3", 3],
+        ["", "v0", "v4", 6],
+        ["", "v1", "v2", 3],
+        ["", "v1", "v4", 7],
+        ["", "v2", "v3", 2],
+        ["", "v5", "v1", 3],
+        ["", "v3", "v4", 5]];
+
 
         var canvas = document.getElementById('kruskal');
-        var canvas2 = document.getElementById('kruskalsub');
-        var kruskal= new Kruskal(canvas,canvas2,myfont,isdigraph,nodes,edges);
-        kruskal.start();
-</script>
 
- <!-- ford fulkerson -->
+
+
+        var canvas2 = document.getElementById('kruskalsub');
+
+        var kruskal = new Kruskal(canvas, canvas2, myfont, isdigraph, nodes, edges);
+        kruskal.start();
+    </script>
+
+
+    <!-- ford fulkerson -->
     <script src="Optimizacion/js/maxflow.js"></script>
     <script src="Optimizacion/js/graph.js"></script>
     <script src="Optimizacion/js/heap.js"></script>
     <!-- ford fulkerson -->
+
 </body>
 
 </html>

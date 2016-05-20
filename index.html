@@ -9,11 +9,10 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="css/material.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <title>Algoritmos</title>
+    <title>Optimización entera y dinamica</title>
 </head>
 
 <body>
-
     <header>
         <!-- Always shows a header, even in smaller screens. -->
         <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
@@ -21,36 +20,76 @@
                 <div class="mdl-layout__header-row">
                     <!-- Title -->
                     <a href="#/" class="nonstyle">
-                    <span class="mdl-layout-title">Algoritmos</span>
+                        <span class="mdl-layout-title">Optimización Entera y Dinamica</span>
                     </a>
                     <!-- Add spacer, to align navigation to the right -->
                     <div class="mdl-layout-spacer"></div>
                     <!-- Navigation. We hide it in small screens. -->
-            
+
                 </div>
             </header>
             <div class="mdl-layout__drawer">
                 <span class="mdl-layout-title">Algoritmos </span>
                 <nav class="mdl-navigation">
-                   <a class="mdl-navigation__link" href="#/">Inicio</a>
-                    <a class="mdl-navigation__link" href="#kruskal">Kruskal</a>
-                    <a class="mdl-navigation__link" href="#fd">Ford-Fulkerson</a>
-                    <a class="mdl-navigation__link" href="#dij">Dijkstra</a>
+                    <a class="mdl-navigation__link" href="index.html">Inicio</a>
+                    <a class="mdl-navigation__link" href="kruskal.html">Kruskal</a>
+                    <a class="mdl-navigation__link" href="fd.html">Ford-Fulkerson</a>
+                    <a class="mdl-navigation__link" href="dij.html">Dijkstra</a>
                 </nav>
             </div>
             <main class="mdl-layout__content">
-                <div class="page-content" ng-view>
+                <div class="page-content">
+                    <section class="container margen">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <article class="well welly">
+                                    <h1 class="color">Programación entera y dinamica</h1>
+                                    <h4>
+                    Profesor: <b>Marco Antonio Esquivel Pichardo</b>
+                    </h4>
+                                    <p>
+                                        El alumno analizará la estructura matemática de los problemas de transporte y de asignación y deducirá del método Simplex los algoritmos de solución específicos para este tipo de problemas lineales auxiliandose de un programa de cómputo.
+                                    </p>
+                                    
+                                    <div class="row text-center">
+                                        <a href="kruskal.html"><div class="col-md-4 sexybox">
+                                            <h5>Kruskal</h5>
+                                        </div></a>
+                                        <a href="fd.html"><div class="col-md-4 sexybox1">
+                                            <h5>Ford-Fulkerson</h5>
+                                        </div></a>
+                                        <a href="dij.html">
+                                        <div class="col-md-4 sexybox2">
+                                            <h5>Dijkstra</h5>
+                                        </div></a>
+                                    </div>
+                                    
+                                    <span>
+                                    
+                        <h4>
+                            Integrantes:
+                        </h4>
+                        <ul>
+                            <li><a href="#">Fausto César Reyes</a></li>
+                            <li><a href="#">Bryan Kenneth Sánchez</a></li>
+                        </ul>
+                    </span>
+                                </article>
+                            </div>
 
+
+                        </div>
+                    </section>
 
                 </div>
-                <!--  <footer class="container-fluid backf">
-      <div class="container">
-       <p>
-       <br>
-        Club de Investigación y Desarrollo Web Acatlán, Copyright 2016 escrito por <a href="">Fausto César Reyes</a>. 
-        </p>
-        </div>
-    </footer> -->
+                <footer class="container-fluid backf">
+                    <div class="container">
+                        <p>
+                            <br>
+                            <i class="material-icons">cloud_queue</i> Club de Investigación y Desarrollo Web Acatlán, Copyright 2016 escrito por <a href="">Bryan Kenneth Sánchez</a> y <a href="">Fausto César Reyes</a>.
+                        </p>
+                    </div>
+                </footer>
             </main>
         </div>
     </header>

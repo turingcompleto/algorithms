@@ -9,132 +9,112 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="css/material.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <title>Cidwa | Fausto César</title>
+    <title>Optimización entera y dinamica</title>
 </head>
 
 <body>
-    <section class="container-fluid backimg">
-       
-        <div class="container margen">
-            <div class="row anima">
-                <div class="col-md-2">
-                    <img src="img/circular_DC.png" alt="" class="img img-responsive">
+    <header>
+        <!-- Always shows a header, even in smaller screens. -->
+        <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+            <header class="mdl-layout__header">
+                <div class="mdl-layout__header-row">
+                    <!-- Title -->
+                    <a href="#/" class="nonstyle">
+                        <span class="mdl-layout-title">Optimización Entera y Dinamica</span>
+                    </a>
+                    <!-- Add spacer, to align navigation to the right -->
+                    <div class="mdl-layout-spacer"></div>
+                    <!-- Navigation. We hide it in small screens. -->
+
                 </div>
-                <div class="col-md-10">
-                    <h2 class="color">Fausto César <br> <small>Scrum Master/Full-stack Developer</small></h2>
-                </div>
+            </header>
+            <div class="mdl-layout__drawer">
+                <span class="mdl-layout-title">Algoritmos </span>
+                <nav class="mdl-navigation">
+                    <a class="mdl-navigation__link" href="index.html">Inicio</a>
+                    <a class="mdl-navigation__link" href="kruskal.html">Kruskal</a>
+                    <a class="mdl-navigation__link" href="fd.html">Ford-Fulkerson</a>
+                    <a class="mdl-navigation__link" href="dij.html">Dijkstra</a>
+                </nav>
             </div>
-                <div class="row margen">
-                    <div class="col-md-6">
-                        <div class="well welly">
-                            <h4 class="color">Tecnologías</h4>
-                            <div class="row">
-                                <div class="col-md-4">
-                                    <p>
-                                        <i class="material-icons">check_circle</i>
-                                        HTML5
-                                    </p>
-                                </div>
-                                <div class="col-md-4">
-                                    <p>
-                                        <i class="material-icons">check_circle</i>
-                                        CSS3
-                                    </p>
-                                </div>
-                                <div class="col-md-4">
-                                    <p>
-                                        <i class="material-icons">check_circle</i>
-                                        Javascript
-                                    </p>
-                                </div>
-                            </div>
-                            
-                            <div class="row">
-                                <div class="col-md-4">
-                                    <p>
-                                        <i class="material-icons">check_circle</i>
-                                        AngularJS
-                                    </p>
-                                </div>
-                                <div class="col-md-4">
-                                    <p>
-                                        <i class="material-icons">check_circle</i>
-                                        NodeJS
-                                    </p>
-                                </div>
-                                <div class="col-md-4">
-                                    <p>
-                                        <i class="material-icons">check_circle</i>
-                                        ExpressJS
-                                    </p>
-                                </div>
-                            </div>
-                            
-                            <div class="row">
-                                <div class="col-md-4">
-                                    <p>
-                                        <i class="material-icons">check_circle</i>
-                                        MongoDB
-                                    </p>
-                                </div>
-                                <div class="col-md-4">
-                                    <p>
-                                        <i class="material-icons">check_circle</i>
-                                        Canvas
-                                    </p>
-                                </div>
-                                <div class="col-md-4">
-                                    <p>
-                                        <i class="material-icons">check_circle</i>
-                                        WebGL
-                                    </p>
-                                </div>
-                            </div>
-                            
-                            <div class="row">
-                                <div class="col-md-4">
-                                    <p>
-                                        <i class="material-icons">check_circle</i>
-                                        JQuery
-                                    </p>
-                                </div>
-                                <div class="col-md-4">
-                                    <p>
-                                        <i class="material-icons">check_circle</i>
-                                        PHP
-                                    </p>
-                                </div>
-                                <div class="col-md-4">
-                                    <p>
-                                        <i class="material-icons">check_circle</i>
-                                        SQL
-                                    </p>
-                                </div>
-                            </div>
+            <main class="mdl-layout__content">
+                <div class="page-content">
+                    <section class="container margen">
+                        <div class="row">
+
+                            <h1>Algoritmo de Ford-Fulkerson</h1>
+                            <section class="row">
+                                <center>
+                                <canvas id="maxflow" width="300" height="300"></canvas>
+                                <canvas id="residue" width="300" height="300"></canvas>    
+                                
+                                </center>
+                            </section>
                         </div>
-                    </div>
-                    <div class="col-md-6 animadelay">
-                       
-                       
-                    </div>
+                    </section>
                 </div>
-                
-                
-        </div> 
-<br>
-<br>
-<br>
-    </section>
-<section class="container-fluid backf">
-<h1 class="color">"Great power comes great responsibility"</h1>
-</section>
-    
+           <footer class="container-fluid backf">
+      <div class="container">
+       <p>
+       <br>
+        <i class="material-icons">cloud_queue</i> Club de Investigación y Desarrollo Web Acatlán, Copyright 2016 escrito por <a href="">Bryan Kenneth Sánchez</a> y <a href="">Fausto César Reyes</a>. 
+        </p>
+        </div>
+    </footer> 
+            </main>
+        </div>
+    </header>
+
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <script src="js/material.min.js"></script>
-    <script src="angular-1.5.0/angular.min.js"></script>
-    <script src="angular-1.5.0/angular-route.min.js"></script>
+    <script src="angular-1.5.5/angular.min.js"></script>
+    <script src="angular-1.5.5/angular-route.min.js"></script>
+
+
+
+    <script src="Optimizacion/js/jcanvas.min.js"></script>
+    <!-- dijsktra-->
+
+    <script src="Optimizacion/js/dijkstra.js"></script>
+    <script src="Optimizacion/js/graph.js"></script>
+    <script src="Optimizacion/js/heap.js"></script>
+    <!--End dijsktra-->
+
+    <!-- kruskal-->
+    <script src="Optimizacion/js/kruskal.js"></script>
+    <script src="Optimizacion/js/graph.js"></script>
+    <script src="Optimizacion/js/qsort.js"></script>
+    
+    <!-- ford fulkerson -->
+    <script src="Optimizacion/js/maxflow.js"></script>
+    <script src="Optimizacion/js/graph.js"></script>
+    <script src="Optimizacion/js/heap.js"></script>
+    <!-- ford fulkerson -->
+    
+    <script>
+	var myfont = "18px 'Courier'";
+	var isdigraph = true;
+	var nodes = [["s",50,150],	// start node
+		["u",150,50],
+		["v",150,150],
+		["w",150,250],
+		["t",250,150]];		// terminal node
+	var edges =[["","s","u",5],
+		["","s","v",7],
+		["","s","w",3],
+		["","u","t",6],
+		["","v","u",2],
+		["","v","t",5],
+		["","w","v",4],
+		["","w","t",8]];
+	var canvas = document.getElementById('maxflow');
+	var canvas2 = document.getElementById('residue');
+	var maxflow= new Maxflow(canvas,canvas2,myfont,isdigraph,nodes,edges);
+	maxflow.start();
+</script>    
+
 </body>
 
 </html>

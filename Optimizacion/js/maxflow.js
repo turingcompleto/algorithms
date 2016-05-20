@@ -332,9 +332,9 @@ function Maxflow(canvas,canvas2,myfont,isdigraph,nodes,edges) {
 		}
 		context.textAlign='left';
 		if (isOptimal) {
-			context.fillText("maxflow="+flow,10,20);
+			context.fillText("Flujo Maximo="+flow,10,20);
 		} else {
-			context.fillText("flow="+flow,10,20);
+			context.fillText("Flujo="+flow,10,20);
 		}
 		isOptimal=false;
 	}
@@ -356,7 +356,7 @@ function Maxflow(canvas,canvas2,myfont,isdigraph,nodes,edges) {
 			Edges[i].paint2(context,Edges[i]);
 		}
 		context.textAlign='left';
-		context.fillText("augflow="+Nodes[tnode].af,10,20);
+		context.fillText("Residual="+Nodes[tnode].af,10,20);
 	}
 
 	function getMousePos(canvas,evt) {
