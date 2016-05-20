@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Optimizacion</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+
+        </header>
+        <h1>Optimizacion</h1>
+        <section class="row">
+          <canvas id="kruskal" width="300" height="250"></canvas><br>
+          <canvas id="kruskalsub" width="320" height="250"></canvas><br>
+    
+    </section>
+    </div>
+
+    <script src="js/jquery-2.2.2.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jcanvas.min.js"></script>
+    
+
+    <!-- kruskal-->
+    <script src="js/kruskal.js"></script>
+    <script src="js/graph.js"></script>
+    <script src="js/qsort.js"></script>
+    <script>
+  var myfont = "18px 'Courier'";
+  var isdigraph = false;
+  var nodes = [["v0",150,50],
+    ["v1",50,100],
+    ["v2",100,200],
+    ["v3",200,200],
+    ["v4",250,100]];
+  var edges =[["","v0","v1",4],
+    ["","v0","v2",4],
+    ["","v0","v3",3],
+    ["","v0","v4",6],
+    ["","v1","v2",3],
+    ["","v1","v4",7],
+    ["","v2","v3",2],
+    ["","v3","v4",5]];
+
+        var canvas = document.getElementById('kruskal');
+        var canvas2 = document.getElementById('kruskalsub');
+        var kruskal= new Kruskal(canvas,canvas2,myfont,isdigraph,nodes,edges);
+        kruskal.start();
+</script>
+    <!--End kruskal-->
+
+    <!-- ford fulkerson -->
+    <script src="js/maxflow.js"></script>
+    <script src="js/graph.js"></script>
+    <script src="js/heap.js"></script>
+    <!-- ford fulkerson -->
+</body>
+
+</html>

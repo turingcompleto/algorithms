@@ -13,52 +13,66 @@
 </head>
 
 <body>
-    <section class="container-fluid backimg">
-       <div class="container margen">
-          <h2 class="color">Mis Proyectos <br>
-          <small>Full-stack Developer</small>
-          </h2>
-           <div class="col-md-4">
-               <div class="thumbnail"><img src="img/salamandra-colores--644x382.jpg" alt="" class="img img-responsive img-thumbnail">
-               <h4 class="color">Salamandra</h4>
-               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora aut dicta provident perspiciatis voluptas cum, ex excepturi molestias sunt similique ipsam voluptate cumque eligendi consectetur incidunt, deserunt suscipit nulla repellat!
-               <a href="">ver más</a>
-               </p>
-            
-                   
-                   
-               </div>
-           </div>
-           <div class="col-md-4">
-               <div class="thumbnail"><img src="img/04-MARTES-FES-ACATLAN-04.jpg" alt="" class="img img-responsive img-thumbnail">
-               <h4 class="color">Portal Editorial Acatlán</h4>
-               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore temporibus iure, sunt. Possimus ipsam eaque repellat vel, culpa ex minima optio ipsum rerum consectetur, voluptatum beatae dicta placeat nihil facere! <a href="">Ver más</a></p>
-                       
-               </div>
-           </div>
-           <div class="col-md-4">
-               <div class="thumbnail"><img src="img/solfie.png" alt="" class="img img-responsive img-thumbnail">
-               <h4 class="color">Solfie</h4>
-               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A natus amet repellendus! Culpa rem omnis error quis ipsa sed totam, dolores, vitae quas dolor deserunt consequatur laborum impedit amet praesentium?
-               <a href="">Ver más</a>
-               </p>
-               
-                    
-                       
-                 
-               </div>
-           </div>
-       </div>
-       <br>
-       
+    <section class="container margen">
+        <div class="row">
+        
+        <h1>Optimizacion</h1>
+        <section class="row">
+          <canvas id="kruskal" width="300" height="250"></canvas><br>
+          <canvas id="kruskalsub" width="320" height="250"></canvas><br>
+            </section>
+        </div>
     </section>
-    
+
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <script src="js/material.min.js"></script>
     <script src="angular-1.5.5/angular.min.js"></script>
     <script src="angular-1.5.5/angular-route.min.js"></script>
+    
+    
+    
+    <script src="Optimizacion/js/jcanvas.min.js"></script>
+    <!-- dijsktra-->
+
+    <script src="Optimizacion/js/dijkstra.js"></script>
+    <script src="Optimizacion/js/graph.js"></script>
+    <script src="Optimizacion/js/heap.js"></script>
+    <!--End dijsktra-->
+
+    <!-- kruskal-->
+    <script src="Optimizacion/js/kruskal.js"></script>
+    <script src="Optimizacion/js/graph.js"></script>
+    <script src="Optimizacion/js/qsort.js"></script>
+    <script>
+  var myfont = "18px 'Courier'";
+  var isdigraph = false;
+  var nodes = [["v0",150,50],
+    ["v1",50,100],
+    ["v2",100,200],
+    ["v3",200,200],
+    ["v4",250,100]];
+  var edges =[["","v0","v1",4],
+    ["","v0","v2",4],
+    ["","v0","v3",3],
+    ["","v0","v4",6],
+    ["","v1","v2",3],
+    ["","v1","v4",7],
+    ["","v2","v3",2],
+    ["","v3","v4",5]];
+
+        var canvas = document.getElementById('kruskal');
+        var canvas2 = document.getElementById('kruskalsub');
+        var kruskal= new Kruskal(canvas,canvas2,myfont,isdigraph,nodes,edges);
+        kruskal.start();
+</script>
+
+ <!-- ford fulkerson -->
+    <script src="Optimizacion/js/maxflow.js"></script>
+    <script src="Optimizacion/js/graph.js"></script>
+    <script src="Optimizacion/js/heap.js"></script>
+    <!-- ford fulkerson -->
 </body>
 
 </html>
